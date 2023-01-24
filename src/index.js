@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //ROUTES
-app.use("/app-vue", require("./routes/sum.routes"));
+app.use(require("./routes/sum.routes"));
 
 //SERVER
 app.listen(app.get("port"), () => {
